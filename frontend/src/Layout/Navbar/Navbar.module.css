@@ -1,0 +1,124 @@
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--sidebar-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: var(--tran-05);
+}
+
+.sidebar.close ~ .navbar {
+  left: 88px; 
+}
+
+
+.navbar_links {
+  list-style: none;
+}
+.img_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--toggle-color);
+  transition: var(--tran-03);
+  cursor: pointer;
+}
+
+.nav_img:hover {
+  transform: scale(1.1);
+  border-color: var(--primary-color);
+}
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-size: 16px;
+  color: var(--text-color); 
+  font-weight: 500;
+  transition: var(--tran-03);
+}
+
+.username:hover {
+  color: var(--primary-color);
+}
+.login_button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.uploads {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--primary-light);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: var(--tran-03);
+  cursor: default;
+}
+
+.upload_icon {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(61%) saturate(2981%) hue-rotate(202deg) brightness(98%) contrast(94%);
+}
+
+.upload_count {
+  font-family: "Questrial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  background-color: #f1f5ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+
+}
+
+.uplaod_text{
+   font-size: 18px;
+}
+.upload_number {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.upload_count:hover {
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+  background-color: #e0edff;
+  cursor: default;
+}
+
+
+.login_button:hover {
+  background-color: #0056b3;
+}

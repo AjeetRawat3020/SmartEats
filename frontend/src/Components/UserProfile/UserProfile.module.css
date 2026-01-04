@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    height: 90vh;
+    padding: 20px;
+    background-color: #f8fafc;
+    gap: 20px;
+  }
+  
+  .leftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .userInfo {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .userInfo:hover {
+    transform: translateY(-5px);
+  }
+  
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #695cfe;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-family: "Eagle Lake", serif;
+    font-size: 2.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .email {
+    font-family: "Questrial", serif;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .summarySection {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .summarySection:hover {
+    transform: translateY(-5px);
+  }
+  
+  .summaryTitle {
+    font-family: "Eagle Lake", serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .summaryText {
+    font-family: "Questrial", serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .healthInfo, .healthStatus {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .healthInfo:hover, .healthStatus:hover {
+    transform: translateY(-5px);
+  }
+  
+  .healthInfo h3, .healthStatus h3 {
+    font-family: "Eagle Lake", serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .infoList p {
+    font-family: "Questrial", serif;
+    font-size: 1rem;
+    color: #555;
+    background: #f5f7fa;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0;
+  }
+  
+  .infoList p strong {
+    color: #695cfe;
+    margin-right: 10px;
+  }
+  
+  .statusList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .listItem, .listItemError {
+    font-family: "Questrial", serif;
+    font-size: 1rem;
+    color: #555;
+    background: #f5f7fa;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .listItemError {
+    color: #e53e3e;
+  }
+  
+  .listIcon {
+    font-size: 1.2rem;
+  }
+  
+  .loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
